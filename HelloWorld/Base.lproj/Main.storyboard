@@ -23,7 +23,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sz5-UD-QdB">
-                                <rect key="frame" x="146.66666666666669" y="712" width="134.66666666666669" height="42"/>
+                                <rect key="frame" x="146.66666666666666" y="787" width="134.99999999999997" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="134.66999999999999" id="M24-di-NTg"/>
                                 </constraints>
@@ -38,17 +38,25 @@
                                         </fragment>
                                     </attributedString>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="jxU-Xb-XOS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="9vI-g0-dev" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="137" id="AjT-5M-b32"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sz5-UD-QdB" secondAttribute="bottom" constant="138" id="G8P-x1-G2Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sz5-UD-QdB" secondAttribute="bottom" constant="63" id="Eqp-RK-Blb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sz5-UD-QdB" secondAttribute="bottom" constant="63" id="G8P-x1-G2Y"/>
                             <constraint firstItem="9vI-g0-dev" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nfz-3x-x3R"/>
                             <constraint firstItem="sz5-UD-QdB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qtU-LL-NVL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorldLabel" destination="9vI-g0-dev" id="LJy-iw-mBU"/>
+                        <outlet property="toggleButton" destination="sz5-UD-QdB" id="BfF-LM-ouM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
